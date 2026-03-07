@@ -25,10 +25,27 @@ p {
     margin-bottom: 10px;
 }
 
+/* ID selector for third paragraph */
+p#special-one {
+    color: #8a2be2;
+    font-weight: bold;
+}
+
+/* Class rule for highlighted text */
+.highlight {
+    background-color: #ffffcc;
+    padding: 5px;
+}
+
 /* Unordered and ordered lists */
 ul, ol {
     margin-left: 30px;
     padding: 5px;
+    border: 2px solid #990000;
+}
+
+li {
+    border-bottom: 1px solid #990000;
 }
 
 /* Table styling */
@@ -55,9 +72,8 @@ a {
     text-decoration: underline;
 }
 
-/* Image */
-img {
-    margin-top: 10px;
-    border: 2px solid #990000;
-    border-radius: 5px;
+/* Image logo rule block */
+img.logo {
+    width: 270px;
+    height: 75px;
 }
