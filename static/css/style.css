@@ -35,6 +35,7 @@ p#special-one {
 .highlight {
     font-size:18px;
     font-weight:bold;
+    color: #556b2f
 }
 
 /* Unordered and ordered lists */
