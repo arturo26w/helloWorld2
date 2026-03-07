@@ -33,8 +33,8 @@ p#special-one {
 
 /* Class rule for highlighted text */
 .highlight {
-    background-color: #ffffcc;
-    padding: 5px;
+    font-size:18px;
+    font-weight:bold;
 }
 
 /* Unordered and ordered lists */
