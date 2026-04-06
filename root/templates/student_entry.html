@@ -97,22 +97,20 @@
   {% endif %}
 
   <div class="col-12">
-        {% if action and action in ['create', 'update'] %}
+    {% if action and action in ['create', 'update'] %}
     <div class="form-check">
-
       <input class="form-check-input" type="checkbox" value="" id="is_honors" name="is_honors"
               {{ 'checked' if student and student['is_honors'] == True else '' }}>
-        {% endif %}
       <label class="form-check-label" for="is_honors">
           <strong>Is this an honors student?</strong>
-            {% if action and not(action in ['create', 'update']) %}
-            <br>{{ 'Yes' if student and student['is_honors'] == True else 'No' }}
-            {% endif %}
       </label>
+    </div>
+    {% else %}
+    <strong>Is this an honors student?</strong>
+    <br>{{ 'Yes' if student and student['is_honors'] == True else 'No' }}
+    {% endif %}
   </div>
 
-
-  </div>
   <div class="col-12 text-center">
     {% if action and action in ['create', 'update'] %}
     <button class="btn btn-primary" type="submit">{{ 'Add' if action=='create' else 'Update' }} Student</button>
