@@ -23,7 +23,7 @@ with app.app_context():
         {'username': 'manager', 'email': 'manager@umd.edu', 'first_name':'Joe', 'last_name':'King',
             'password': generate_password_hash('managerpw', method='pbkdf2:sha256'), 'role':'MANAGER'},
         {'username': 'admin', 'email': 'admin@umd.edu', 'first_name':'Crystal', 'last_name':'Ball',
-            'password': generate_password_hash('adminpw', method='pbkdf2:sha256'), 'role':'ADMIN'}
+            'password': generate_password_hash('adminpw', method='pbkdf2:sha256'), 'role':'ADMIN'},
         {'username': 'adelgad6', 'email': 'adelgad6@terpmail.umd.edu', 'first_name': 'Arturo', 'last_name': 'Delgado',
          'password': generate_password_hash('Lightswitch17$', method='pbkdf2:sha256'), 'role': 'STUDENT'}
     ]
@@ -38,7 +38,9 @@ with app.app_context():
     # Initial loading of students
     students = [
         {'first_name': 'Test', 'last_name': 'Student', 'email':'student@umd.edu',
-            'major_id': 3, 'birth_date': dt.strptime('2007-08-01', '%Y-%m-%d'), 'is_honors': 1}
+            'major_id': 3, 'birth_date': dt.strptime('2007-08-01', '%Y-%m-%d'), 'is_honors': 1},
+        {'first_name': 'Arturo', 'last_name': 'Delgado', 'email':'adelgad6@terpmail.umd.edu',
+         'major_id': 2, 'birth_date' :  dt.strptime('2004-07-02', '%Y-%m-%d'), 'is_honors': 0 }
     ]
 
     for each_student in students:

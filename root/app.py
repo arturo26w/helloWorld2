@@ -223,6 +223,11 @@ def page_not_found(e):
 if __name__ == '__main__':
     app.run(debug=True)
 
+@app.route('/training')
+@login_required
+@role_required(['ADMIN', 'MANAGER'])
+def training():
+    return render_template('training.html')
 
 
 
